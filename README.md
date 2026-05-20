@@ -29,32 +29,32 @@ All three are evaluated on **MovieLens-1M**, **Yelp** (Open Dataset), and **Amaz
 
 ```
 recommender_system/
-├── README.md                        ← this file
+├── README.md                                ← this file
 │
 ├── Research Paper/
-│    ├── RLMRec_SASRec.pdf           ← Research Paper
+│    ├── RLMRec_SASRec.pdf                   ← Research Paper
+│    ├── RLMRec_SASRec_Presentation.pdf
+├── sasrec_model.py                          ← SASRec architecture
+├── rlmrec_model.py                          ← RLMRecSASRec wrapper + InfoNCE
+├── lightgcn_model.py                        ← LightGCN + LightGCNRLMRec wrapper
 │
-├── sasrec_model.py                  ← SASRec architecture
-├── rlmrec_model.py                  ← RLMRecSASRec wrapper + InfoNCE
-├── lightgcn_model.py                ← LightGCN + LightGCNRLMRec wrapper
+├── sasrec_data.py                           ← MovieLens-1M loader (auto-download)
+├── yelp_data.py                             ← Yelp loader (manual download)
+├── amazon_data.py                           ← Amazon Reviews 2023 loader (auto-download)
+├── rlmrec_data.py                           ← ML-1M-specific semantic-profile builder
+├── eval_full_rank.py                        ← shared full-rank LOO evaluator
 │
-├── sasrec_data.py                   ← MovieLens-1M loader (auto-download)
-├── yelp_data.py                     ← Yelp loader (manual download)
-├── amazon_data.py                   ← Amazon Reviews 2023 loader (auto-download)
-├── rlmrec_data.py                   ← ML-1M-specific semantic-profile builder
-├── eval_full_rank.py                ← shared full-rank LOO evaluator
+├── sasrec_train.py                          ← train pure SASRec
+├── rlmrec_sasrec_train.py                   ← train RLMRec+SASRec
+    ├── rlmrec_lightgcn_train.py             ← train RLMRec+LightGCN
 │
-├── sasrec_train.py                  ← train pure SASRec
-├── rlmrec_sasrec_train.py           ← train RLMRec+SASRec
-├── rlmrec_lightgcn_train.py         ← train RLMRec+LightGCN
-│
-├── seed_aggregation.py              ← multi-seed aggregation helpers
-├── run_all.py                       ← orchestrator: ML-1M, 3 models × N seeds
-├── run_all_yelp.py                  ← orchestrator: Yelp,   3 models × N seeds
-├── run_all_amazon.py                ← orchestrator: Amazon, 3 models × N seeds
-├── run_everything.py                ← top-level: runs all three orchestrators + make_overview
-├── run_ablations.py                 ← ablation grid for RLMRec+SASRec (and RLMRec+LightGCN)
-├── make_overview.py                 ← generate per-dataset results_overview.md
+├── seed_aggregation.py                      ← multi-seed aggregation helpers
+├── run_all.py                               ← orchestrator: ML-1M, 3 models × N seeds
+├── run_all_yelp.py                          ← orchestrator: Yelp,   3 models × N seeds
+├── run_all_amazon.py                        ← orchestrator: Amazon, 3 models × N seeds
+├── run_everything.py                        ← top-level: runs all three orchestrators + make_overview
+├── run_ablations.py                         ← ablation grid for RLMRec+SASRec (and RLMRec+LightGCN)
+├── make_overview.py                         ← generate per-dataset results_overview.md
 ```
 
 ---
