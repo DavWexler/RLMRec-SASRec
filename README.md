@@ -31,6 +31,9 @@ All three are evaluated on **MovieLens-1M**, **Yelp** (Open Dataset), and **Amaz
 recommender_system/
 ├── README.md                        ← this file
 │
+├── Research Paper/
+│    ├── RLMRec_SASRec.pdf           ← Research Paper
+│
 ├── sasrec_model.py                  ← SASRec architecture
 ├── rlmrec_model.py                  ← RLMRecSASRec wrapper + InfoNCE
 ├── lightgcn_model.py                ← LightGCN + LightGCNRLMRec wrapper
