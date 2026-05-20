@@ -33,7 +33,7 @@ recommender_system/
 │
 ├── Research Paper/
 │    ├── RLMRec_SASRec.pdf                   ← Research Paper
-│    ├── RLMRec_SASRec_Presentation.pdf      ← Presentation as Overview of Research Paper
+│    ├── RLMRec_SASRec_Presentation.pdf      ← Presentation as an overview of the Research Paper
 │ 
 ├── sasrec_model.py                          ← SASRec architecture
 ├── rlmrec_model.py                          ← RLMRecSASRec wrapper + InfoNCE
