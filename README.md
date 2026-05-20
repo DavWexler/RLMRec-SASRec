@@ -47,7 +47,7 @@ recommender_system/
 │
 ├── sasrec_train.py                          ← train pure SASRec
 ├── rlmrec_sasrec_train.py                   ← train RLMRec+SASRec
-    ├── rlmrec_lightgcn_train.py             ← train RLMRec+LightGCN
+├── rlmrec_lightgcn_train.py                 ← train RLMRec+LightGCN
 │
 ├── seed_aggregation.py                      ← multi-seed aggregation helpers
 ├── run_all.py                               ← orchestrator: ML-1M, 3 models × N seeds
