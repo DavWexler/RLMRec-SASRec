@@ -32,8 +32,8 @@ recommender_system/
 ├── README.md                                ← this file
 │
 ├── Research Paper/
-│    ├── RLMRec_SASRec.pdf                   ← Research Paper
-│    ├── RLMRec_SASRec_Presentation.pdf      ← Presentation as an overview of the Research Paper
+│   ├── RLMRec_SASRec.pdf                    ← Research Paper
+│   └── RLMRec_SASRec_Presentation.pdf       ← Presentation as an overview of the Research Paper
 │ 
 ├── sasrec_model.py                          ← SASRec architecture
 ├── rlmrec_model.py                          ← RLMRecSASRec wrapper + InfoNCE
@@ -55,7 +55,7 @@ recommender_system/
 ├── run_all_amazon.py                        ← orchestrator: Amazon, 3 models × N seeds
 ├── run_everything.py                        ← top-level: runs all three orchestrators + make_overview
 ├── run_ablations.py                         ← ablation grid for RLMRec+SASRec (and RLMRec+LightGCN)
-├── make_overview.py                         ← generate per-dataset results_overview.md
+└── make_overview.py                         ← generate per-dataset results_overview.md
 ```
 
 ---
