@@ -28,7 +28,7 @@ All three are evaluated on **MovieLens-1M**, **Yelp** (Open Dataset), and **Amaz
 ## 1. Repository layout
 
 ```
-recommender_system/
+<CURRENT_DIRECTORY>/
 ├── README.md                                ← this file
 │
 ├── Research Paper/
